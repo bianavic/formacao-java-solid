@@ -1,17 +1,19 @@
 package org.edu.fabs.SRP.problem;
 
+import java.math.BigDecimal;
+
 public class Produto {
 
-    private String name;
-    private Double price;
+    private String nome;
+    private BigDecimal preco;
 
-    public Produto(String name, Double price) {
-        this.name = name;
-        this.price = price;
+    public Produto(String nome, BigDecimal preco) {
+        this.nome = nome;
+        this.preco = preco;
     }
 
-    public Double getPrice() {
-        return price;
+    public BigDecimal getPreco() {
+        return preco;
     }
 
 }

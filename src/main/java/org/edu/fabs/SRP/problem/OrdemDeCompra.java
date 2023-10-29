@@ -13,7 +13,7 @@ public class OrdemDeCompra {
 
     public BigDecimal calcularTotal() {
         return produtos.stream()
-                .map(Produto::getPrice)
+                .map(Produto::getPreco)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
